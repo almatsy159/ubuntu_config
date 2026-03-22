@@ -2,3 +2,4 @@ config.py
 debug
 .venv
 comment.md
+__pycache__
