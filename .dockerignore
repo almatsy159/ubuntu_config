@@ -1,4 +1,6 @@
 config.py
 debug
 .venv
-comment.md
+comment.
+data
+__pycache__
