@@ -4,3 +4,7 @@ debug
 comment.md
 __pycache__
 data
+*.db
+front.py
+pyqt_app_generated.py
+config
