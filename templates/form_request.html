@@ -1,0 +1,90 @@
+
+
+<h2>Create HTTP Request</h2>
+
+<form action="/send-http-request" method="post">
+
+<h3>Connection</h3>
+
+<label>Protocol</label>
+<select name="protocol">
+<option value="http">http</option>
+<option value="https">https</option>
+</select>
+
+<br><br>
+
+<label>Host</label>
+<input type="text" name="host" placeholder="example.com" required>
+
+<br><br>
+
+<label>Port</label>
+<input type="number" name="port" value="80">
+
+<br><br>
+
+<label>Path</label>
+<input type="text" name="path" placeholder="/api/data">
+
+<br><br>
+
+<h3>Method</h3>
+
+<select name="method">
+<option>GET</option>
+<option>POST</option>
+<option>PUT</option>
+<option>DELETE</option>
+<option>PATCH</option>
+<option>OPTIONS</option>
+<option>HEAD</option>
+</select>
+
+<br><br>
+
+<h3>Query Parameters</h3>
+
+<label>Key</label>
+<input type="text" name="param_key">
+
+<label>Value</label>
+<input type="text" name="param_value">
+
+<br><br>
+
+<h3>Headers</h3>
+
+<label>Header Name</label>
+<input type="text" name="header_name">
+
+<label>Header Value</label>
+<input type="text" name="header_value">
+
+<br><br>
+
+<h3>Body</h3>
+
+<textarea name="body" rows="8" cols="50" placeholder="JSON or text body"></textarea>
+
+<br><br>
+
+<h3>Authentication</h3>
+
+<label>Auth Type</label>
+<select name="auth_type">
+<option>None</option>
+<option>Bearer Token</option>
+<option>Basic Auth</option>
+</select>
+
+<br><br>
+
+<label>Token / Credentials</label>
+<input type="text" name="auth_value">
+
+<br><br>
+
+<input type="submit" value="Send Request">
+
+</form>
